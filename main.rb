@@ -19,11 +19,11 @@ class MainWindow < Gtk::Window
 	end
 
 end
-		
+	
 Gtk.init
 a = MainWindow.new
 a.show_all
-$vte.fork_command("zsh")
+$vte.fork_command(GLib.getenv("SHELL"))
 $vte.set_visible_bell(false)
 $vte.set_audible_bell(false)
 $vte.grab_focus
