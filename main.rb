@@ -23,7 +23,7 @@ end
 Gtk.init
 a = MainWindow.new
 a.show_all
-$vte.fork_command("bash")
+$vte.fork_command("zsh")
 $vte.set_visible_bell(false)
 $vte.set_audible_bell(false)
 $vte.grab_focus
